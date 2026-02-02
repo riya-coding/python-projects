@@ -40,7 +40,7 @@ while True:
                 print("Roll number already exists. Please enter a unique roll number.")
                 continue
             name = input("Enter student name: ")
-            m = float(input("Enter SGPI: ")) # how dp u know user will not enetr "khf" and same thi swill halt the code
+            m = float(input("Enter SGPI: ")) # how do u know user will not enetr "khf" and same this will halt the code
             if m<0 or m>10:
                 print("\nPlease Enter correct SGPI\n")
                 continue
@@ -109,47 +109,48 @@ while True:
     else:
         print("\nInvalid choice , Please enter the correct number\n")
 
+# this is an add-on I wanted to give you, if you are ok with it, just a tip
 
-# this is an img addon i wanted to give u , if u are ok with it , just a tip
+# in the code there is one problem: whenever the user enters wrong input, the code ends
+# but generally we don’t want the code to stop on wrong input, like it’s better to give the user
+# another chance for reinput
+# like how would you feel if you enter the wrong gmail and the website closes 😂,
+# we don’t do it in professional life too
 
-# in the code there is one problem when ever user enters wrong imput the code ends 
-# but generally we dont want the code to stop on wrong input , like it better to give user 
-# another chace for reinput
-# like how would u feel if u enter wrong gmail and the website closes 😂 , we don't do it in professional life too
+# I am doing it for 1, but you can, if you want, update it for all or just use it next time
 
-# i am doing it for 1 , but u can , if u want update it for all or just use it next time
+# Add-on: you have used continue to solve it but there is 1 flaw in it
 
-# Addon , u have used continue to solve it but there is 1 flaw in it 
-
-# lets take for choice 1 
+# let’s take for choice 1
 
 # I enter roll no : 76 {correct}
 # I enter name :- "Nik" {correct}
 # I enter SGPA :- 65 {wrong for the condition m < 0 or m > 10} 🤯
-# The problem not ur code well destroy the roll no and name i entered 
-# I now need to start from the very begning
-# Do u see the problem , No ?
-# what if ue i code is big , like enter email , phon no ... 
-# I filled all details it took 30 min , 35 opt {35 inpt}
-# I entered 1 wrong detail and all goon and now i need to restart from the first input 😭
+# The problem is not your code, but it will destroy the roll no and name I entered
+# I now need to start from the very beginning
+# Do you see the problem? No?
+# what if the code is big, like enter email, phone no ...
+# I filled all details, it took 30 min, 35 opts {35 inputs}
+# I entered 1 wrong detail and all gone and now I need to restart from the first input 😭
 
-# solution ? :- for each time u need to reask user to enter the value when the enter wrong value 
-# Make a fresh loop just for that value
+# solution? :- every time you need to re-ask the user to enter the value when they enter a wrong value
+# make a fresh loop just for that value
 
-# See the example
+# see the example
 
-# its a general example but logic remains the same 
+# it’s a general example but the logic remains the same
 
 # a = input("Enter a number :- ")
 
-# while not a.isdigit() :
+# while not a.isdigit():
 #   print("Invalid")
-#   a = input("Enter a number :- ") 
-# re asking here it slef not continue key word , now only this section will loop 
-# and not the whole loop 
-# so now i dont need to restart the whole form
+#   a = input("Enter a number :- ")
+# re-asking here itself, not the continue keyword, now only this section will loop
+# and not the whole loop
+# so now I don’t need to restart the whole form
 
-# There are 1-2 small error like it can break but i guess it ok , for now can be skiped 
+# There are 1–2 small errors in the code , like it can break, but I guess it’s ok,
+# for now it can be skipped
 
-# I just though could add value to ur code :)
+# I just thought I could add value to your code :)
 # Hope it helps 😊
